@@ -1,0 +1,34 @@
+{
+  "exports": {
+    "require": "./index.cjs",
+    "import": "./index.js"
+  },
+  "types": "./index.d.ts",
+  "type": "module",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --single-quote --check .",
+    "prepare": "cd ../ && husky install server/.husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "mongodb": "^4.13.0",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^2.6.7",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
